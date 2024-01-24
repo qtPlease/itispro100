@@ -1,0 +1,20 @@
+<svg width="37" height="29" viewBox="0 0 37 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="37" height="29" fill="#1E1E1E"/>
+<g id="index" clip-path="url(#clip0_0_1)">
+<rect width="1920" height="6186" transform="translate(-1182 -3650)" fill="white"/>
+<g id="courses">
+<rect id="Rectangle 17" x="-1142" y="-1194" width="1840" height="1337" rx="30" fill="#E5EBF8"/>
+<g id="button">
+<rect id="Rectangle 19" x="-537" y="-26" width="653" height="79" rx="39.5" fill="#5783EC"/>
+<g id="Group 23">
+<path id="Vector" d="M0 12.6186H29.3082L18.6728 2.66031L21.514 0L37 14.5L21.514 29L18.6728 26.3397L29.3082 16.3814H0V12.6186Z" fill="white"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_1">
+<rect width="1920" height="6186" fill="white" transform="translate(-1182 -3650)"/>
+</clipPath>
+</defs>
+</svg>

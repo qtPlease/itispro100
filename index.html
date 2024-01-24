@@ -3,8 +3,147 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <p>initial publish</p>
+        <header>
+            <div class="header">
+                <img src="imgs/header/logo.svg" class="header__logo">
+                <h1 class="header__logo_text">KidTech</h1>
+                <div class="header__menu">
+                    <p class="header__menu_item">О нас</p>
+                    <p class="header__menu_item">Тарифы</p>
+                    <p class="header__menu_item">Отзывы</p>
+                    <p class="header__menu_item">Контакты</p>
+                </div>
+            </div>
+        </header>
+        <div class="ad__background">
+            <img src="imgs/ad/css_icon.svg" class="ad__background_html">
+            <img src="imgs/ad/js_icon.svg" class="ad__background_js">
+            <img src="imgs/ad/py_icon.svg" class="ad__background_py">
+            <div class="ad__block">
+                <p class="ad__slogan_pointer" style="margin-top:106px;">&lt;<span class="ad__slogan">slogan</span>&gt;</p>
+                <p class="ad__slogan_main">Воспитаем талант!<br>Научим учиться!<br>Направим желание в нужное русло!</p>
+                <p class="ad__slogan_pointer" style="margin-top:-27px;">&lt;/<span class="ad__slogan">slogan</span>&gt;</p>
+                <img src="imgs/ad/selector.svg" id="blink">
+                <p class="ad__slogan_sub">Подобрать тариф от</p>
+                <div class="button ad__button">
+                    <p>6500</p>
+                    <p>4999₽/мес.</p>
+                </div>
+                <p class="ad__slogan_sub">Скидка на первую оплату</p>
+            </div>
+        </div>
+        <div class="blueback_round">
+            <h1 class="title">О нас</h1>
+            <div class="desc__advantages">
+                <p class="desc__advantages_big">5.000+</p>
+                <p class="desc__advantages_small">Довольных родителей</p>
+                <p class="desc__advantages_big">12+</p>
+                <p class="desc__advantages_small">Лет на рынке</p>
+                <p class="desc__advantages_big">100+</p>
+                <p class="desc__advantages_small">Опытных сотрудников</p>
+            </div>
+            <div class="desc__text">
+                <p>KidTech - российская образовательная организация (онлайн-школа), предоставляющая услуги по обучению детей 7-16 лет программированию и дизайну.</p>
+
+                <p>Мы специализируемся на развитии у наших учеников логического мышления. Комфортная атмосфера сохраняет неподдельный интерес к изучению и постижению предмета.</p>
+                
+                <p>Наши преподаватели подбирают индивидуальный подход для каждого ребёнка, что позволяет выявить его способности на ранних стадиях обучения и направить их в нужное русло.</p>
+                
+                <p>Наши ученики объединяются в группы по несколько человек для выполнения заданий. Окружение из сверстников позволит развить у ребёнка коммуникативные способности и даст опыт работы в коллективе.</p>
+            </div>
+        </div>
+        <div class="blueback_round">
+            <h1 class="title">Онлайн-курсы</h1>
+            <div class="courses">
+                <div class="courses__block">
+                    <div class="courses__block_top">
+                        <p class="courses__title_1row">Начало начал</p>
+                        <img src="imgs/courses/mine_icon.svg" width="144px" height="163px" class="courses__img">
+                    </div>
+                    <div class="courses__age">7-12 лет</div>
+                    <p class="courses__desc">Заложим фундамент. Начнём изучать основы программирования на основе Minecraft: Education Edition.</p>
+                </div>
+                <div class="courses__block">
+                    <div class="courses__block_top">
+                        <p class="courses__title_2row">Ввод в игрострой</p>
+                        <img src="imgs/courses/rblx_icon.svg" width="167px" height="160px" class="courses__img">
+                    </div>
+                    <div class="courses__age">9-14 лет</div>
+                    <p class="courses__desc">Начнём изучать основы процесса создания игр. Узнаем подробнее о гейм-дизайне и левел-дизайне на основе Roblox.</p>
+                </div>
+                <div class="courses__block">
+                    <div class="courses__block_top">
+                        <p class="courses__title_2row">Ввод в программирование</p>
+                        <img src="imgs/courses/scrtch_icon.svg" width="138px" height="149px" class="courses__img">
+                    </div>
+                    <div class="courses__age">9-14 лет</div>
+                    <p class="courses__desc">Начнём изучать основы алгоритмизации. Научим решать простейшие задачи на основе Scratch.</p>
+                </div>
+                
+                <div class="courses__block">
+                    <div class="courses__block_top">
+                        <p class="courses__title_1row">Ввод в дизайн</p>
+                        <img src="imgs/courses/gimp_icon.svg" width="226px" height="170px" class="courses__img">
+                    </div>
+                    <div class="courses__age">9-14 лет</div>
+                    <p class="courses__desc">Начнём изучать основы дизайна, научим работать с графическим редактором GIMP.</p>
+                </div>
+                <div class="courses__block">
+                    <div class="courses__block_top">
+                        <p class="courses__title_2row">Основы игростроя</p>
+                        <img src="imgs/courses/godo_icon.svg" width="138px" height="149px" class="courses__img">
+                    </div>
+                    <div class="courses__age">14-16 лет</div>
+                    <p class="courses__desc">Углубимся в процесс создания игр. Перейдём в более распространённую среду создания игр Godot.</p>
+                </div>
+                <div class="courses__block">
+                    <div class="courses__block_top">
+                        <p class="courses__title_2row">Основны программирования</p>
+                        <img src="imgs/courses/pyth_icon.svg" width="138px" height="149px" class="courses__img">
+                    </div>
+                    <div class="courses__age">14-16 лет</div>
+                    <p class="courses__desc">Углубимся в программирование, изучим более сложные алгоритмы, применяемые повседневно. Изучим язык программирования Python.</p>
+                </div>
+            </div>
+            <div class="button button_arrow">
+                <p>Подробнее о тарифах</p>
+                <img src="imgs/courses/arrow.svg" width="37px" height="29px">
+            </div>
+        </div>
+        <div class="blueback_round">
+            <h1 class="title">Отзывы</h1>
+            <div class="feedback">
+                <img src="imgs/feedback/pointer.svg" class="feedback__arrow">
+                <div class="feedback__window">
+                    <img src="imgs/feedback/user_icon.svg">
+                    <div class="feedback__namecourse">
+                        <p>Анна Иванова</p>
+                        <p>"Основы программирования"</p>
+                    </div>
+                    <p class="feedback__review">Мы с дочкой долго сомневались с выбором подходящего тарифа, но отзывчивая поддержка всё объяснила и помогла нам определиться! Уроки увлекательные и понятные! Я была приятно удивлена! Мы все остались очень довольными!</p>
+                </div>
+                <img src="imgs/feedback/pointer.svg" class="feedback__arrow">
+            </div>
+            <div class="button button_arrow">
+                <p>Оставить свой отзыв</p>
+                <img src="imgs/courses/arrow.svg" width="37px" height="29px">
+            </div>
+        </div>
+        <div class="blueback_round">
+            <h1 class="title">Наш офис</h1>
+            <div class="map">
+                
+            </div>
+        </div>
+        <footer>
+
+        </footer>
+        <script src="script.js"></script>
     </body>
 </html>
