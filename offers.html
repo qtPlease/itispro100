@@ -7,7 +7,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-        <title>KidTech - Главная</title>
+        <title>KidTech - Тарифы</title>
         <link rel="icon" type="image/x-icon" href="/imgs/favicon.svg">
     </head>
     <body>
@@ -16,48 +16,85 @@
                 <a href=http://127.0.0.1:5500/index.html#header><img src="imgs/header/logo.svg" class="header__logo"></a>
                 <a href=http://127.0.0.1:5500/index.html#header><h1 class="header__logo_text">KidTech</h1></a>
                 <div class="header__menu">
-                    <p class="header__menu_item" onclick="aboutAnchor()">О нас</p>
-                    <a href="http://127.0.0.1:5500/offers.html"><p class="header__menu_item">Тарифы</p></a>
+                    <a href="http://127.0.0.1:5500/index.html#about"><p class="header__menu_item">О нас</p></a>
+                    <p class="header__menu_item" onclick="headerAnchor()">Тарифы</p>
                     <a href="http://127.0.0.1:5500/reviewform.html"><p class="header__menu_item">Отзывы</p></a>
                     <p class="header__menu_item" onclick="footerAnchor()">Контакты</p>
                 </div>
             </div>
         </header>
-        <div class="ad__background">
-            <img src="imgs/ad/css_icon.svg" class="ad__background_html">
-            <img src="imgs/ad/js_icon.svg" class="ad__background_js">
-            <img src="imgs/ad/py_icon.svg" class="ad__background_py">
-            <div class="ad__block">
-                <p class="ad__slogan_pointer" style="margin-top:106px;">&lt;<span class="ad__slogan">slogan</span>&gt;</p>
-                <p class="ad__slogan_main">Воспитаем талант!<br>Научим учиться!<br>Направим желание в нужное русло!</p>
-                <p class="ad__slogan_pointer" style="margin-top:-27px;">&lt;/<span class="ad__slogan">slogan</span>&gt;</p>
-                <img src="imgs/ad/selector.svg" id="blink">
-                <p class="ad__slogan_sub">Подобрать тариф от</p>
-                <div class="button ad__button">
-                    <p>6500</p>
-                    <p>4999₽/мес.</p>
+        <div class="blueback_round blueback_frst">
+            <h1 class="title">Тарифы</h1>
+            <div class="offers">
+                <div class="offers__block">
+                    <p class="offer__title">1 месяц</p>
+                    <img src="imgs/popup/check.svg" class="offer__check">
+                    <p class="offer__advantage">1 урок в неделю</p>
+                    <img src="imgs/popup/check.svg" class="offer__check">
+                    <p class="offer__advantage">Заморозка на 5 дней</p>
+                    <img src="imgs/popup/check.svg" class="offer__check">
+                    <p class="offer__advantage">4 ч/нед. с наставником</p>
+                    <div class="button offer__button offer__button_small">
+                        <p>6500</p>
+                        <p>4999₽/мес.</p>
+                    </div>
+                    <p class="offer__button_sub">Выбор курса после оплаты</p>
                 </div>
-                <p class="ad__slogan_sub">Скидка на первую оплату</p>
+                <div class="offers__block">
+                    <p class="offer__title offer__title_wide">2 месяца</p>
+                    <img src="imgs/popup/check.svg" class="offer__check">
+                    <p class="offer__advantage">До 2-х уроков в неделю</p>
+                    <img src="imgs/popup/check.svg" class="offer__check">
+                    <p class="offer__advantage">Заморозка на 11 дней</p>
+                    <img src="imgs/popup/check.svg" class="offer__check">
+                    <p class="offer__advantage">6 ч/нед. с наставником</p>
+                    <img src="imgs/popup/check.svg" class="offer__check">
+                    <p class="offer__advantage">1 смена курса</p>
+                    <div class="button offer__button">
+                        <p>5900</p>
+                        <p>4399₽/мес.</p>
+                    </div>
+                    <p class="offer__button_sub">Выбор курса после оплаты</p>
+                </div>
+                <div class="offers__block">
+                    <p class="offer__title offer__title_wide">3 месяца</p>
+                    <img src="imgs/popup/check.svg" class="offer__check">
+                    <p class="offer__advantage">До 3-х уроков в неделю</p>
+                    <img src="imgs/popup/check.svg" class="offer__check">
+                    <p class="offer__advantage">Заморозка на 17 дней</p>
+                    <img src="imgs/popup/check.svg" class="offer__check">
+                    <p class="offer__advantage">8 ч/нед. с наставником</p>
+                    <img src="imgs/popup/check.svg" class="offer__check">
+                    <p class="offer__advantage">Неограниченные смены курса</p>
+                    <div class="button offer__button">
+                        <p>5199</p>
+                        <p>3999₽/мес.</p>
+                    </div>
+                    <p class="offer__button_sub">Выбор курса после оплаты</p>
+                </div>
             </div>
         </div>
         <div class="blueback_round">
-            <h1 class="title" id="about">О нас</h1>
-            <div class="desc__advantages">
-                <p class="desc__advantages_big">5.000+</p>
-                <p class="desc__advantages_small">Довольных родителей</p>
-                <p class="desc__advantages_big">12+</p>
-                <p class="desc__advantages_small">Лет на рынке</p>
-                <p class="desc__advantages_big">100+</p>
-                <p class="desc__advantages_small">Опытных сотрудников</p>
-            </div>
-            <div class="desc__text">
-                <p>KidTech - российская образовательная организация (онлайн-школа), предоставляющая услуги по обучению детей 7-16 лет программированию и дизайну.</p>
-
-                <p>Мы специализируемся на развитии у наших учеников логического мышления. Комфортная атмосфера сохраняет неподдельный интерес к изучению и постижению предмета.</p>
-                
-                <p>Наши преподаватели подбирают индивидуальный подход для каждого ребёнка, что позволяет выявить его способности на ранних стадиях обучения и направить их в нужное русло.</p>
-                
-                <p>Наши ученики объединяются в группы по несколько человек для выполнения заданий. Окружение из сверстников позволит развить у ребёнка коммуникативные способности и даст опыт работы в коллективе.</p>
+            <h1 class="title">Что нужно для эффективного обучения</h1>
+            <div class="reqs">
+                <div class="reqs__block">
+                    <p class="reqs__title">От родителей</p>
+                    <img src="imgs/requirements/question.svg" class="reqs__icon">
+                    <p class="reqs__text">Помочь ребёнку освоиться</p>
+                    <img src="imgs/requirements/cmd.svg" class="reqs__icon_cmd">
+                    <p class="reqs__text">Базовое понимание компьютера</p>
+                    <img src="imgs/requirements/clock.svg" class="reqs__icon">
+                    <p class="reqs__text">Периодическая проверка занятости ребёнка</p>
+                </div>
+                <div class="reqs__block">
+                    <p class="reqs__title">От ребёнка</p>
+                    <img src="imgs/requirements/book.svg" class="reqs__icon">
+                    <p class="reqs__text">Желание учиться</p>
+                    <img src="imgs/requirements/cmd.svg" class="reqs__icon_cmd">
+                    <p class="reqs__text">Базовое понимание компьютера</p>
+                    <img src="imgs/requirements/happy.svg" class="reqs__icon">
+                    <p class="reqs__text">Хорошее настроение!</p>
+                </div>
             </div>
         </div>
         <div class="blueback_round">
@@ -261,40 +298,101 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <a href="http://127.0.0.1:5500/offers.html"><div class="button button_arrow">
-                <p>Подробнее о тарифах</p>
-                <img src="imgs/courses/arrow.svg" width="37px" height="29px">
-            </div></a>
-        </div>
-        <div class="blueback_round">
-            <h1 class="title" id="reviews">Отзывы</h1>
-            <div class="feedback">
-                <img src="imgs/feedback/pointer.svg" class="feedback__arrow" id="previous">
-                <div class="feedback__window">
-                    <img src="imgs/feedback/user_icon.svg">
-                    <div class="feedback__namecourse">
-                        <p id="name">Анна Иванова</p>
-                        <p id="course">"Основы программирования"</p>
+                <div class="courses__block" id="myButton7">
+                    <div class="courses__block_top">
+                        <p class="courses__title_2row">Основны программирования</p>
+                        <img src="imgs/courses/phsh_icon.svg" width="149px" height="153px" class="courses__img">
                     </div>
-                    <p class="feedback__review" id="review">Мы с дочкой долго сомневались с выбором подходящего тарифа, но отзывчивая поддержка всё объяснила и помогла нам определиться! Уроки увлекательные и понятные, а учителя отвечают на любой вопрос! В итоге мы все остались очень довольными, большое спасибо!!</p>
+                    <div class="courses__age">14-16 лет</div>
+                    <p class="courses__desc">Углубимся в изучение дизайна. На современных примерах разберём тренды и их подробности. Изучим интерфейс Adobe Photoshop.</p>
                 </div>
-                <img src="imgs/feedback/pointer.svg" class="feedback__arrow" id="next">
-            </div>
-            <div class="button button_arrow">
-                <p>Оставить свой отзыв</p>
-                <img src="imgs/courses/arrow.svg" width="37px" height="29px">
-            </div>
-        </div>
-        <div class="blueback_round">
-            <h1 class="title">Наш офис</h1>
-            <div class="map">
-                <div class="map__adress">
-                    <p>Ул. Руставели Д. 9</p>
-                    <p>С 10:00 до 18:00</p>
-                    <p>Пн, Ср, Пт</p>
+                <div id="myPopup7" class="popup">
+                    <div class="popup__block">
+                        <img id="closePopup7" src="imgs/popup/cross.svg" class="popup__close">
+                        <div class="popup__content">
+                            <p>Основы дизайна</p>
+                            <p>Рекомендуемая возрастная категория: 14-16 лет</p>
+                            <p>Углубимся в изучение дизайна. На современных примерах разберём тренды в дизайне. Изучим интерфейс Adobe Photoshop.</p>
+                            <p>Обобщим:</p>
+                            <div class="popup__advantages">
+                                <img src="imgs/popup/check.svg">
+                                <p>Персональные задания</p>
+                                <img src="imgs/popup/check.svg">
+                                <p>ПО выдаётся преподователем</p>
+                                <img src="imgs/popup/check.svg">
+                                <p>Средний порог вхождения</p>
+                                <img src="imgs/popup/check.svg">
+                                <p>Желательно наличие графического планшета</p>
+                                <img src="imgs/popup/check.svg">
+                                <p>Средние требования к ПК</p>
+                            </div>
+                            <img src="imgs/courses/phsh_icon.svg" width="149px" height="153px" class="popup__img">
+                        </div>
+                    </div>
+                </div><div class="courses__block" id="myButton8">
+                    <div class="courses__block_top">
+                        <p class="courses__title_2row">Продвинутый игрострой</p>
+                        <img src="imgs/courses/unity__icon.svg" width="132px" height="150px" class="courses__img">
+                    </div>
+                    <div class="courses__age">15-16 лет</div>
+                    <p class="courses__desc">Разберём на настоящих примерах все плюсы и минусы различных игровых движков. Закончим обучение групповым проектом на Unity.</p>
                 </div>
-                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A3032ba434245bb65765340dec4dfa7f2dc93ec4c88d88c0add208f7b68b4ed67&amp;source=constructor" width="1280" height="585" frameborder="0" class="map__frame"></iframe>
+                <div id="myPopup8" class="popup">
+                    <div class="popup__block">
+                        <img id="closePopup8" src="imgs/popup/cross.svg" class="popup__close">
+                        <div class="popup__content">
+                            <p>Продвинутый игрострой</p>
+                            <p>Рекомендуемая возрастная категория: 15-16 лет</p>
+                            <p>Разберём на настоящих примерах все плюсы и минусы различных игровых движков. Закончим обучение групповым проектом на Unity.</p>
+                            <p>Обобщим:</p>
+                            <div class="popup__advantages">
+                                <img src="imgs/popup/check.svg">
+                                <p>Персональные задания</p>
+                                <img src="imgs/popup/check.svg">
+                                <p>Бесплатное ПО</p>
+                                <img src="imgs/popup/check.svg">
+                                <p>Высокий порог вхождения</p>
+                                <img src="imgs/popup/check.svg">
+                                <p>Доп. аппаратура не требуется</p>
+                                <img src="imgs/popup/check.svg">
+                                <p>Высокие требования к ПК</p>
+                            </div>
+                            <img src="imgs/courses/unity__icon.svg" width="132px" height="150px" class="popup__img">
+                        </div>
+                    </div>
+                </div>
+                <div class="courses__block" id="myButton9">
+                    <div class="courses__block_top">
+                        <p class="courses__title_2row">Продвинутое программирование</p>
+                        <img src="imgs/courses/cpp_icon.svg" width="130px" height="146px" class="courses__img">
+                    </div>
+                    <div class="courses__age">15-16 лет</div>
+                    <p class="courses__desc">Научимся создавать интерфейсы. Изучим язык программирования C++. Закончим обучение групповым проектом на С++.</p>
+                </div>
+                <div id="myPopup9" class="popup">
+                    <div class="popup__block">
+                        <img id="closePopup9" src="imgs/popup/cross.svg" class="popup__close">
+                        <div class="popup__content">
+                            <p>Продвинутое программирование</p>
+                            <p>Рекомендуемая возрастная категория: 15-16 лет</p>
+                            <p>Научимся создавать интерфейсы. Изучим язык программирования C++. Закончим обучение групповым проектом на С++.</p>
+                            <p>Обобщим:</p>
+                            <div class="popup__advantages">
+                                <img src="imgs/popup/check.svg">
+                                <p>Персональные задания</p>
+                                <img src="imgs/popup/check.svg">
+                                <p>ПО выдаётся преподователем</p>
+                                <img src="imgs/popup/check.svg">
+                                <p>Высокий порог вхождения</p>
+                                <img src="imgs/popup/check.svg">
+                                <p>Доп. аппаратура не требуется</p>
+                                <img src="imgs/popup/check.svg">
+                                <p>Средние требования к ПК</p>
+                            </div>
+                            <img src="imgs/courses/cpp_icon.svg" width="130px" height="146px" class="popup__img">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <footer>
@@ -305,14 +403,14 @@
                     <p class="footer__mail_text">Подпишитесь на нашу рассылку чтобы первым узнавать о скидках!</p>
                     <form action="https://formsubmit.co/905fbda9a468c8a92e99003ab1fb6dc5" method="POST">
                         <input type="hidden" name="_autoresponse" value="Вы подписались на нашу рассылку! Спасибо!">
-                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html#footer">
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/offers.html#footer">
                         <input class="footer__form_input" type="emai" name="email" required placeholder="Введите вашу почту...">
                         <button class="footer__form_button" type="submit">Подписаться</button>
                    </form>
                 </div>
                 <div class="footer__right">
                     <div class="header__menu footer__menu">
-                        <p class="header__menu_item" onclick="aboutAnchor()">О нас</p>
+                        <a href="http://127.0.0.1:5500/index.html#about"><p class="header__menu_item">О нас</p></a>
                         <a href="http://127.0.0.1:5500/offers.html"><p class="header__menu_item">Тарифы</p></a>
                         <a href="http://127.0.0.1:5500/reviewform.html"><p class="header__menu_item">Отзывы</p></a>
                         <p class="header__menu_item" onclick="footerAnchor()">Контакты</p>
