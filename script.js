@@ -16,6 +16,29 @@ function aboutAnchor() {
     })
 };
 
+document.addEventListener('DOMContentLoaded', function() {
+    const reviews = [
+        ["Анна Иванова", "“Основы программирования”", "Мы с дочкой долго сомневались с выбором подходящего тарифа, но отзывчивая поддержка всё объяснила и помогла нам определиться! Уроки увлекательные и понятные, а учителя отвечают на любой вопрос! В итоге мы все остались очень довольными, большое спасибо!!"],
+        ["Борис Харитонович", "“Ввод в дизайн”","Интерактивные занятия долго держат внимание ребёнка. Учавствуя в групповых проектах наша дочка завела новых знакомых. Ей нравится, а мы только и рады!"],
+        ["Сергей Лихачёв", "“Продвинутый игрострой”", "Заранее поговорил с поддержкой, поспрашивал что да как. Сын увлёкся видеоиграми, ну вот я и решил ему подарок сделать... В итоге даже самому интересно стало. Советую."]
+    ];
+    let currentIndex = 0;
+    function updateReview() {
+        document.querySelector('#name').textContent = reviews[currentIndex][0];
+        document.querySelector('#course').textContent = reviews[currentIndex][1];
+        document.querySelector('#review').textContent = reviews[currentIndex][2];
+    }
+    document.querySelector('#next').addEventListener('click', function() {
+        currentIndex = (currentIndex + 1) % reviews.length;
+        updateReview();
+    });
+    document.querySelector('#previous').addEventListener('click', function() {
+        currentIndex = (currentIndex - 1 + reviews.length) % reviews.length;
+        updateReview();
+    });
+    updateReview();
+});
+
 document.querySelector("#myButton1").addEventListener("click", function () {
     myPopup1.classList.add("show");
 });
@@ -114,29 +137,6 @@ window.addEventListener("click", function (event) {
     if (event.target == myPopup9) {
         myPopup9.classList.remove("show");
     }
-});
-
-document.addEventListener('DOMContentLoaded', function() {
-    const reviews = [
-        ["Анна Иванова", "“Основы программирования”", "Мы с дочкой долго сомневались с выбором подходящего тарифа, но отзывчивая поддержка всё объяснила и помогла нам определиться! Уроки увлекательные и понятные, а учителя отвечают на любой вопрос! В итоге мы все остались очень довольными, большое спасибо!!"],
-        ["Борис Харитонович", "“Ввод в дизайн”","Интерактивные занятия долго держат внимание ребёнка. Учавствуя в групповых проектах наша дочка завела новых знакомых. Ей нравится, а мы только и рады!"],
-        ["Сергей Лихачёв", "“Продвинутый игрострой”", "Заранее поговорил с поддержкой, поспрашивал что да как. Сын увлёкся видеоиграми, ну вот я и решил ему подарок сделать... В итоге даже самому интересно стало. Советую."]
-    ];
-    let currentIndex = 0;
-    function updateReview() {
-        document.querySelector('#name').textContent = reviews[currentIndex][0];
-        document.querySelector('#course').textContent = reviews[currentIndex][1];
-        document.querySelector('#review').textContent = reviews[currentIndex][2];
-    }
-    document.querySelector('#next').addEventListener('click', function() {
-        currentIndex = (currentIndex + 1) % reviews.length;
-        updateReview();
-    });
-    document.querySelector('#previous').addEventListener('click', function() {
-        currentIndex = (currentIndex - 1 + reviews.length) % reviews.length;
-        updateReview();
-    });
-    updateReview();
 });
 
 document.querySelector("#blink").animate(
